@@ -2,3 +2,10 @@
     color: #ffab66;
 
 }
+.question{
+    width: 80%;
+    border: solid black 1px;
+    margin: auto;
+    padding: 5%;
+
+}

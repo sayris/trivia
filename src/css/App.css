@@ -8,6 +8,12 @@ body {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   color: #ff6666;
+  text-align: center;
+    border: solid blueviolet 1px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height:100%;
 }
 
 

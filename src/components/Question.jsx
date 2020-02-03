@@ -11,7 +11,7 @@ class Question extends Component {
   // }
   render() {
     return (
-      <div>
+      <div className="question">
         <h2>{this.props.question}</h2>  
         <button class="answer">{this.props.answerOne}</button>
         <button class="answer">{this.props.answerTwo}</button>
