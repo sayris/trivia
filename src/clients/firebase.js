@@ -21,3 +21,5 @@ export function getRandomQuestion(questions) {
   const randomIndex = Math.floor(Math.random() * keys.length);
   return questions[keys[randomIndex]];
 }
+
+export default firebase;

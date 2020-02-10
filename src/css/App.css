@@ -10,8 +10,8 @@ body {
   color: #ff6666;
   text-align: center;
     border: solid blueviolet 1px;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: auto;
     padding: 0;
     height:100%;
 }

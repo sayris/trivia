@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/App.css';
 // import components
 import Question from './Question';
+import Answer  from './Answer';
+import '../questionData.js';
 
 class App extends Component {
 
@@ -9,34 +11,29 @@ class App extends Component {
     return (
 
       <div className="app">
+        
        <Question
        question= "How old are you?"
-       answerOne= "2"
-       answerTwo="13"
-       answerThree="27"
-       answerFour="34"
-
+       
 
         />
-         <Question
-       question= "How old are you?"
-       answerOne= "2"
-       answerTwo="13"
-       answerThree="27"
-       answerFour="34"
+         <Answer 
+         answerOne="1"
+       
+         />
+         <Answer 
+         answerOne="1"
+       
+         />
+         <Answer 
+         answerOne="1"
+       
+         />
+         <Answer 
+         answerOne="1"
+       
+         />
 
-
-        />
-        
-        <Question
-       question= "How many children you have?"
-       answerOne= "2"
-       answerTwo="13"
-       answerThree="27"
-       answerFour="34"
-
-
-        />
         
         
       </div>

@@ -13,11 +13,8 @@ class Question extends Component {
     return (
       <div className="question">
         <h2>{this.props.question}</h2>  
-        <button class="answer">{this.props.answerOne}</button>
-        <button class="answer">{this.props.answerTwo}</button>
-        <button class="answer">{this.props.answerThree}</button>
-        <button class="answer">{this.props.answerFour}</button>
-        <button>Reset</button>
+        
+        
       </div>
     );
   }
