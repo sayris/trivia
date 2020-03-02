@@ -22,4 +22,3 @@ export function getRandomQuestion(questions) {
   return questions[keys[randomIndex]];
 }
 
-export default firebase;
