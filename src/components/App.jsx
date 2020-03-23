@@ -27,6 +27,13 @@ class App extends Component {
     var database = buildFirebase();
     var databaseRef = database.ref("/questions");
     databaseRef.once("value").then(data => this.bindData(data));
+
+    this.nextQuestion = this.nextQuestion.bind(this);
+  }
+
+  nextQuestion() {
+    let newQuestion = getRandomQuestion(this.state.questions);
+    this.setState({ current_question: newQuestion });
   }
   // state = {}
   // call firebase
@@ -41,10 +48,34 @@ class App extends Component {
           {/* <QuestionData /> */}
           Trivia!
           <Question question={this.state.current_question.question_text} />
-          <Answer answerOne={this.state.current_question.choices[0]} />
-          <Answer answerOne={this.state.current_question.choices[1]} />
-          <Answer answerOne={this.state.current_question.choices[2]} />
-          <Answer answerOne={this.state.current_question.choices[3]} />
+          <Answer
+            answerOne={this.state.current_question.choices[0]}
+            correctAnswer={
+              this.state.current_question.correct_choice_index === 0
+            }
+            nextQuestionFn={this.nextQuestion}
+          />
+          <Answer
+            answerOne={this.state.current_question.choices[1]}
+            correctAnswer={
+              this.state.current_question.correct_choice_index === 1
+            }
+            nextQuestionFn={this.nextQuestion}
+          />
+          <Answer
+            answerOne={this.state.current_question.choices[2]}
+            correctAnswer={
+              this.state.current_question.correct_choice_index === 2
+            }
+            nextQuestionFn={this.nextQuestion}
+          />
+          <Answer
+            answerOne={this.state.current_question.choices[3]}
+            correctAnswer={
+              this.state.current_question.correct_choice_index === 3
+            }
+            nextQuestionFn={this.nextQuestion}
+          />
         </div>
       );
     }
