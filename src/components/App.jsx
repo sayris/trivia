@@ -52,25 +52,29 @@ class App extends Component {
           />
           <Answer
             answerOne={this.state.current_question.choices[0]}
+            correctAnswer={this.state.current_question.choices[this.state.current_question.correct_choice_index]}
 
           />
           <Answer
             answerOne={this.state.current_question.choices[1]}
+            correctAnswer={this.state.current_question.choices[this.state.current_question.correct_choice_index]}
 
 
           />
           <Answer
             answerOne={this.state.current_question.choices[2]}
+            correctAnswer={this.state.current_question.choices[this.state.current_question.correct_choice_index]}
 
 
           />
           <Answer
             answerOne={this.state.current_question.choices[3]}
+            correctAnswer={this.state.current_question.choices[this.state.current_question.correct_choice_index]}
 
 
           />
 
-
+            {/* <button onClick={this.bindData()}>Next Question</button> */}
 
         </div>
       );
